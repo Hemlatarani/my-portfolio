@@ -1,0 +1,163 @@
+"use client";
+
+import { FaAward } from "react-icons/fa";
+import { HiOutlineShieldCheck } from "react-icons/hi";
+import { MdOutlineDateRange } from "react-icons/md";
+import { FiExternalLink } from "react-icons/fi";
+
+export default function Certificates() {
+  const certificates = [
+    {
+      id: 1,
+      platform: "Coursera / Meta",
+      date: "Dec 2023",
+      title: "Frontend Development",
+      desc: "Learned HTML, CSS, JavaScript, React.js and responsive web development.",
+      link: "#",
+    },
+    {
+      id: 2,
+      platform: "Amazon Web Services",
+      date: "Oct 2025",
+      title: "AWS Cloud Practitioner",
+      desc: "Learned AWS fundamentals including EC2, S3, IAM and Cloud concepts.",
+      link: "#",
+    },
+    {
+      id: 3,
+      platform: "Udemy",
+      date: "Dec 2026",
+      title: "Full Stack Web Development",
+      desc: "Completed MERN Stack Development and built real-world projects.",
+      link: "#",
+    },
+  ];
+
+  return (
+    <section
+      id="certificates"
+      className="bg-[#0B1220] py-24"
+    >
+      <div className="max-w-[1320px] mx-auto px-5">
+
+        {/* Heading */}
+
+        <p className="uppercase tracking-[8px] text-cyan-400 text-sm">
+          Achievements
+        </p>
+
+        <h2 className="text-6xl font-bold text-white mt-4 mb-20">
+          Certifications
+        </h2>
+
+        {/* Cards */}
+
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+
+          {certificates.map((item) => (
+
+            <div
+              key={item.id}
+              className="group relative bg-[#181C45] rounded-3xl p-8
+              border border-transparent
+              transition-all duration-500
+              hover:-translate-y-4
+              hover:border-cyan-400
+              hover:shadow-[0_0_30px_rgba(34,211,238,0.2)]"
+            >
+
+              {/* Floating Icon */}
+
+              <div
+                className="
+                absolute
+                -top-5
+                right-8
+                w-16
+                h-16
+                rounded-2xl
+                bg-cyan-400
+                flex
+                justify-center
+                items-center
+                shadow-lg
+                transition-all
+                duration-500
+                group-hover:-rotate-12
+                group-hover:scale-110
+                group-hover:-translate-y-2
+                "
+              >
+                <FaAward className="text-white text-2xl" />
+              </div>
+
+              {/* Top */}
+
+              <div className="flex items-center gap-5 text-gray-400 text-sm">
+
+                <div className="flex items-center gap-2">
+
+                  <HiOutlineShieldCheck />
+
+                  <span>{item.platform}</span>
+
+                </div>
+
+                <div className="flex items-center gap-2">
+
+                  <MdOutlineDateRange />
+
+                  <span>{item.date}</span>
+
+                </div>
+
+              </div>
+
+              {/* Title */}
+
+              <h3 className="text-3xl font-bold text-white mt-8 leading-tight">
+
+                {item.title}
+
+              </h3>
+
+              {/* Description */}
+
+              <p className="text-gray-400 mt-6 leading-8">
+
+                {item.desc}
+
+              </p>
+
+              {/* Link */}
+
+              <a
+                href={item.link}
+                className="
+                inline-flex
+                items-center
+                gap-2
+                text-cyan-400
+                font-semibold
+                mt-8
+                transition-all
+                duration-300
+                group-hover:gap-4
+                "
+              >
+                View Certificate
+
+                <FiExternalLink />
+
+              </a>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+    </section>
+  );
+}
