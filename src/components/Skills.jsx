@@ -80,7 +80,7 @@ export default function Skills() {
             My Expertise
           </p>
 
-          <h2 className="text-6xl font-bold text-white mt-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mt-4">
             Skills &
             <span className="text-cyan-400"> Experience</span>
           </h2>
@@ -93,7 +93,7 @@ export default function Skills() {
 
           <div>
 
-            <h2 className="text-4xl font-bold text-white mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-10">
               Technical <span className="text-cyan-400">Skills</span>
             </h2>
 
@@ -147,7 +147,7 @@ export default function Skills() {
 
           <div>
 
-            <h2 className="text-4xl font-bold text-white mb-10">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-10">
               Work <span className="text-cyan-400">Experience</span>
             </h2>
 

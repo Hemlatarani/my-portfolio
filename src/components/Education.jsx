@@ -28,9 +28,7 @@ id="education"
 
                     {/* Main Grid */}
 
-                    <div
-
-                        className="grid grid-cols-1 lg:grid-cols-[25%_75%] gap-16 items-center mx-4 ">
+                    <div className="grid grid-cols-1 lg:grid-cols-[25%_75%] gap-16 items-center mx-4">
 
                         {/* Left Image */}
 
@@ -48,7 +46,7 @@ id="education"
                             <img
                                 src="/images/my.jpg"
                                 alt="Education"
-                                className="relative z-10 w-[380px] h-[520px] object-cover rounded-3xl border border-cyan-500"
+                                className="relative z-10 w-[260px] h-[360px] sm:w-[320px] sm:h-[440px] lg:w-[380px] lg:h-[520px] object-cover rounded-3xl border border-cyan-500"
                             />
                         </motion.div>
 
@@ -59,29 +57,28 @@ id="education"
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: false, amount: 0.3 }}
-                              className="flex flex-col gap-8"
-
+                            className="flex flex-col gap-8"
                         >
 
                             {/* Card 1 */}
 
-                            <div className="bg-[#171B35] rounded-3xl p-4 border border-cyan-500/20 hover:border-cyan-500 transition-all duration-500  mx-1">
+                            <div className="bg-[#171B35] rounded-3xl p-4 border border-cyan-500/20 hover:border-cyan-500 transition-all duration-500 mx-1">
 
-                                <div className="flex justify-between items-center gap-2">
+                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
 
                                     <div className="flex items-center gap-3">
 
-                                        <div className="w-16 h-16   rounded-lg border border-cyan-500 flex justify-center items-center">
+                                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-lg border border-cyan-500 flex justify-center items-center shrink-0">
                                             <FaGraduationCap className="text-cyan-400 text-3xl" />
                                         </div>
 
                                         <div>
 
-                                            <h3 className="text-3xl font-bold text-white">
+                                            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">
                                                 Bachelor of Arts
                                             </h3>
 
-                                            <p className="text-gray-400 mt-1">
+                                            <p className="text-gray-400 mt-1 text-sm sm:text-base">
                                                 Maharshi Dayanand University
                                             </p>
 
@@ -89,7 +86,7 @@ id="education"
 
                                     </div>
 
-                                    <button className="bg-cyan-500 text-black px-5 py-2 rounded-full font-medium">
+                                    <button className="bg-cyan-500 text-black px-4 py-2 rounded-full font-medium text-sm w-fit">
                                         2000 - 2005
                                     </button>
 
@@ -108,41 +105,38 @@ id="education"
                                 </div>
 
                             </div>
-                            <div className="bg-[#171B35] rounded-3xl p-8 border border-cyan-500/20 hover:border-cyan-500 transition-all duration-500 ">
+                            <div className="bg-[#171B35] rounded-3xl p-6 sm:p-8 border border-cyan-500/20 hover:border-cyan-500 transition-all duration-500">
 
-                                <div className="flex justify-between items-center">
+                                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
 
                                     <div className="flex items-center gap-5">
 
-                                        <div className="w-16 h-16 rounded-2xl border border-cyan-500 flex justify-center items-center">
+                                        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl border border-cyan-500 flex justify-center items-center shrink-0">
                                             <FaGraduationCap className="text-cyan-400 text-3xl" />
                                         </div>
 
                                         <div>
 
-                                            <h3 className="text-3xl font-bold text-white">
+                                            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">
                                                 Full Stack Web Development
-
                                             </h3>
 
-                                            <p className="text-gray-400 mt-1">
+                                            <p className="text-gray-400 mt-1 text-sm sm:text-base">
                                                 WsCube Tech (Online)
-
                                             </p>
 
                                         </div>
 
                                     </div>
 
-                                    <button className="bg-cyan-500 text-black px-5 py-2 rounded-full font-medium">
+                                    <button className="bg-cyan-500 text-black px-4 py-2 rounded-full font-medium text-sm w-fit">
                                         2024 - 2025
                                     </button>
 
                                 </div>
 
-                                <p className="text-gray-400 leading-8 mt-8">
+                                <p className="text-gray-400 leading-7 mt-8 text-sm sm:text-base break-words">
                                     Completed a comprehensive Full Stack Web Development course covering HTML, CSS, JavaScript, React.js, Next.js, Node.js, Express.js, MongoDB, REST APIs, Git & GitHub, and built multiple real-world projects.
-
                                 </p>
                                 <div className="flex  mt-3  gap-4">
 

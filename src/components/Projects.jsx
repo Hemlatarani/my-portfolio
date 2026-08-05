@@ -54,8 +54,8 @@ export default function Projects() {
     <section 
       id="projects"
 className="min-h-screen bg-[#0B1220] mt-8  items-center">
-      <h1  className="text-6xl bg-blue-900 bg-clip-text text-transparent py-3 font-bold animate-slideFromRight ">Projects</h1>
-      <div className="max-w-[1320px] mx-auto py-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 overflow-hidden">
+      <h1 className="text-3xl sm:text-4xl lg:text-6xl bg-blue-900 bg-clip-text text-transparent py-3 px-5 font-bold animate-slideFromRight">Projects</h1>
+      <div className="max-w-[1320px] mx-auto px-5 py-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 overflow-hidden">
 
         {
           projects.map((projects) => {

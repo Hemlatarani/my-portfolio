@@ -24,7 +24,7 @@ export default function Contact() {
             Get In Touch
           </p>
 
-          <h2 className="text-6xl font-bold text-white mt-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mt-4">
             Contact Me
           </h2>
 
@@ -36,7 +36,7 @@ export default function Contact() {
 
           <div>
 
-            <h3 className="text-4xl font-bold text-white">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
               Let's Work Together
             </h3>
 

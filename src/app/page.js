@@ -13,10 +13,10 @@ import React from 'react'
 
 export default function HomePage() {
   return (
-        <main className="bg-[#0B1220] text-white">
-      <div className="max-w-[1320px] mx-auto px-5">
-
+    <>
       <Navbar/>
+      <main className="bg-[#0B1220] text-white">
+      <div className="max-w-[1320px] mx-auto px-5">
     <Welcome/>
   <About/>
     <Education/>
@@ -27,5 +27,6 @@ export default function HomePage() {
     <Footer/>
     </div>
     </main>
+    </>  
   )
 }

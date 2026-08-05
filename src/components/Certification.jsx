@@ -36,127 +36,93 @@ export default function Certificates() {
   return (
     <section
       id="certificates"
-      className="bg-[#0B1220] py-24"
+      className="bg-[#0B1220] py-16 sm:py-20 lg:py-24 overflow-x-hidden"
     >
-      <div className="max-w-[1320px] mx-auto px-5">
-
+      <div className="max-w-[1320px] mx-auto px-5 sm:px-6 lg:px-8">
         {/* Heading */}
 
-        <p className="uppercase tracking-[8px] text-cyan-400 text-sm">
+        <p className="uppercase tracking-[4px] sm:tracking-[6px] lg:tracking-[8px] text-cyan-400 text-xs sm:text-sm">
           Achievements
         </p>
 
-        <h2 className="text-6xl font-bold text-white mt-4 mb-20">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-4 mb-10 sm:mb-14 lg:mb-20">
           Certifications
         </h2>
 
         {/* Cards */}
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
-
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {certificates.map((item) => (
-
             <div
               key={item.id}
-              className="group relative bg-[#181C45] rounded-3xl p-8
-              border border-transparent
-              transition-all duration-500
-              hover:-translate-y-4
-              hover:border-cyan-400
-              hover:shadow-[0_0_30px_rgba(34,211,238,0.2)]"
+              className="group relative bg-[#181C45] rounded-3xl p-5 sm:p-6 lg:p-8 border border-transparent transition-all duration-500 hover:-translate-y-4 hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)]"
             >
-
               {/* Floating Icon */}
 
               <div
                 className="
-                absolute
-                -top-5
-                right-8
-                w-16
-                h-16
-                rounded-2xl
-                bg-cyan-400
-                flex
-                justify-center
-                items-center
-                shadow-lg
-                transition-all
-                duration-500
-                group-hover:-rotate-12
-                group-hover:scale-110
-                group-hover:-translate-y-2
+                  absolute
+                  -top-5
+                  right-5
+                  sm:right-8
+                  w-14
+                  h-14
+                  sm:w-16
+                  sm:h-16
+                  rounded-2xl
+                  bg-cyan-400
+                  flex
+                  justify-center
+                  items-center
+                  shadow-lg
+                  transition-all
+                  duration-500
+                  group-hover:-rotate-12
+                  group-hover:scale-110
+                  group-hover:-translate-y-2
                 "
               >
-                <FaAward className="text-white text-2xl" />
+                <FaAward className="text-white text-xl sm:text-2xl" />
               </div>
 
               {/* Top */}
 
-              <div className="flex items-center gap-5 text-gray-400 text-sm">
-
+              <div className="flex items-center justify-between flex-wrap gap-3 text-gray-400 text-xs sm:text-sm mt-6">
                 <div className="flex items-center gap-2">
-
                   <HiOutlineShieldCheck />
-
                   <span>{item.platform}</span>
-
                 </div>
 
                 <div className="flex items-center gap-2">
-
                   <MdOutlineDateRange />
-
                   <span>{item.date}</span>
-
                 </div>
-
               </div>
 
               {/* Title */}
 
-              <h3 className="text-3xl font-bold text-white mt-8 leading-tight">
-
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mt-6 leading-tight">
                 {item.title}
-
               </h3>
 
               {/* Description */}
 
-              <p className="text-gray-400 mt-6 leading-8">
-
+              <p className="text-gray-400 mt-5 leading-7">
                 {item.desc}
-
               </p>
 
               {/* Link */}
 
               <a
                 href={item.link}
-                className="
-                inline-flex
-                items-center
-                gap-2
-                text-cyan-400
-                font-semibold
-                mt-8
-                transition-all
-                duration-300
-                group-hover:gap-4
-                "
+                className="inline-flex items-center gap-2 text-cyan-400 font-semibold mt-6 sm:mt-8 transition-all duration-300 group-hover:gap-4"
               >
                 View Certificate
-
                 <FiExternalLink />
-
               </a>
-
             </div>
-
           ))}
-
         </div>
-
       </div>
     </section>
   );
