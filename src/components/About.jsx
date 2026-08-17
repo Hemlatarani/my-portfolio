@@ -38,13 +38,14 @@ export default function About() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
               I'm <span className="text-cyan-400">Hemlata</span>
               <br />
-              Frontend Developer
+              Full Stack Developer
             </h2>
 
             <p className="text-gray-400 leading-8 mb-8">
-              Passionate Frontend Developer with knowledge of HTML, CSS,
-              JavaScript, React, Next.js and Tailwind CSS. I love building
-              responsive, modern and user-friendly web applications.
+              Passionate Full Stack Developer with expertise in React, Next.js,
+              Node.js, MongoDB and Tailwind CSS. I love building
+              responsive, modern and user-friendly web applications from
+              frontend to backend.
             </p>
 
             <div className="flex flex-wrap items-center gap-3">

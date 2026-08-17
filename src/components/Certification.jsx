@@ -41,11 +41,11 @@ export default function Certificates() {
       <div className="max-w-[1320px] mx-auto px-5 sm:px-6 lg:px-8">
         {/* Heading */}
 
-        <p className="uppercase tracking-[4px] sm:tracking-[6px] lg:tracking-[8px] text-cyan-400 text-xs sm:text-sm">
+        <p className="cert-heading uppercase tracking-[4px] sm:tracking-[6px] lg:tracking-[8px] text-cyan-400 text-xs sm:text-sm">
           Achievements
         </p>
 
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-4 mb-10 sm:mb-14 lg:mb-20">
+        <h2 className="cert-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mt-4 mb-10 sm:mb-14 lg:mb-20">
           Certifications
         </h2>
 
@@ -55,7 +55,7 @@ export default function Certificates() {
           {certificates.map((item) => (
             <div
               key={item.id}
-              className="group relative bg-[#181C45] rounded-3xl p-5 sm:p-6 lg:p-8 border border-transparent transition-all duration-500 hover:-translate-y-4 hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)]"
+              className="cert-card group relative bg-[#181C45] rounded-3xl p-5 sm:p-6 lg:p-8 border border-transparent transition-all duration-500 hover:-translate-y-4 hover:border-cyan-400 hover:shadow-[0_0_30px_rgba(34,211,238,0.2)]"
             >
               {/* Floating Icon */}
 
